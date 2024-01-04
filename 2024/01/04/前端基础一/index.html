@@ -19,25 +19,32 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"pfmirr.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="今天也不想睡天桥捡垃圾">
-<meta property="og:type" content="website">
-<meta property="og:title" content="泡芙PF&amp;博客">
-<meta property="og:url" content="https://pfmirr.github.io/index.html">
+    <meta name="description" content="关于html和css 一、HTML 网页制作从上到下，先整体再局部  html定义：超文本标记语言 1、标签标签语法ctrl+B折叠VScode侧边栏 双标签：开始标签，结束标签 单标签：水平线 换行 标签的关系父子关系（嵌套关系）子级换行且缩进tab键 兄弟关系（并列关系）兄弟换行且对齐 标签分类 标题标签 h1~h6(双标签)  段落标签 p(双标签)  换行和水平线标签  br &#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端基础一">
+<meta property="og:url" content="https://pfmirr.github.io/2024/01/04/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E4%B8%80/index.html">
 <meta property="og:site_name" content="泡芙PF&amp;博客">
-<meta property="og:description" content="今天也不想睡天桥捡垃圾">
+<meta property="og:description" content="关于html和css 一、HTML 网页制作从上到下，先整体再局部  html定义：超文本标记语言 1、标签标签语法ctrl+B折叠VScode侧边栏 双标签：开始标签，结束标签 单标签：水平线 换行 标签的关系父子关系（嵌套关系）子级换行且缩进tab键 兄弟关系（并列关系）兄弟换行且对齐 标签分类 标题标签 h1~h6(双标签)  段落标签 p(双标签)  换行和水平线标签  br &#x2F;">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pfmirr.github.io/2024/01/04/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E4%B8%80/%E5%9B%BE%E7%89%87%E7%9A%84url">
+<meta property="og:image" content="https://pfmirr.github.io/2024/01/04/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E4%B8%80/%E5%9B%BE%E7%89%87%E7%9A%84url">
+<meta property="article:published_time" content="2024-01-04T11:32:55.000Z">
+<meta property="article:modified_time" content="2024-01-04T11:35:18.952Z">
 <meta property="article:author" content="泡芙PF">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pfmirr.github.io/2024/01/04/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E4%B8%80/%E5%9B%BE%E7%89%87%E7%9A%84url">
 
 
-<link rel="canonical" href="https://pfmirr.github.io/">
+<link rel="canonical" href="https://pfmirr.github.io/2024/01/04/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E4%B8%80/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://pfmirr.github.io/2024/01/04/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E4%B8%80/","path":"2024/01/04/前端基础一/","title":"前端基础一"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>泡芙PF&博客</title>
+<title>前端基础一 | 泡芙PF&博客</title>
   
 
 
@@ -70,7 +77,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">泡芙PF&博客</h1>
+      <p class="site-title">泡芙PF&博客</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">在命运为你安排的属于自己的时区里，一切都准时</p>
@@ -124,7 +131,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -137,6 +144,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81HTML"><span class="nav-number">1.</span> <span class="nav-text">一、HTML</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E6%A0%87%E7%AD%BE"><span class="nav-number">1.1.</span> <span class="nav-text">1、标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE%E8%AF%AD%E6%B3%95"><span class="nav-number">1.1.1.</span> <span class="nav-text">标签语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-number">1.1.2.</span> <span class="nav-text">标签的关系</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE%E5%88%86%E7%B1%BB"><span class="nav-number">1.1.3.</span> <span class="nav-text">标签分类</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%B3%A8%E9%87%8A"><span class="nav-number">1.2.</span> <span class="nav-text">2、注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E8%B7%AF%E5%BE%84"><span class="nav-number">1.3.</span> <span class="nav-text">3、路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E5%88%97%E8%A1%A8"><span class="nav-number">1.4.</span> <span class="nav-text">4、列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5%E3%80%81%E8%A1%A8%E6%A0%BC"><span class="nav-number">1.5.</span> <span class="nav-text">5、表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6%E3%80%81%E8%A1%A8%E5%8D%95"><span class="nav-number">1.6.</span> <span class="nav-text">6、表单</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#text%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%A1%86"><span class="nav-number">1.6.1.</span> <span class="nav-text">text单行文本框</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#password%E5%AF%86%E7%A0%81"><span class="nav-number">1.6.2.</span> <span class="nav-text">password密码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#radio%E5%8D%95%E9%80%89%E6%A1%86"><span class="nav-number">1.6.3.</span> <span class="nav-text">radio单选框</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#checkbox%E5%A4%9A%E9%80%89%E6%A1%86"><span class="nav-number">1.6.4.</span> <span class="nav-text">checkbox多选框</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#file%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6"><span class="nav-number">1.6.5.</span> <span class="nav-text">file上传文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95"><span class="nav-number">1.6.6.</span> <span class="nav-text">下拉菜单</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E6%9C%AC%E5%9F%9F"><span class="nav-number">1.6.7.</span> <span class="nav-text">文本域</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lable%E6%A0%87%E7%AD%BE"><span class="nav-number">1.6.8.</span> <span class="nav-text">lable标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8C%89%E9%92%AE"><span class="nav-number">1.6.9.</span> <span class="nav-text">按钮</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%97%A0%E8%AF%AD%E4%B9%89%E7%9A%84%E5%B8%83%E5%B1%80%E6%A0%87%E7%AD%BE"><span class="nav-number">1.6.10.</span> <span class="nav-text">无语义的布局标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E5%AE%9E%E4%BD%93"><span class="nav-number">1.6.11.</span> <span class="nav-text">字符实体</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81CSS"><span class="nav-number">2.</span> <span class="nav-text">二、CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81css%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">1、css的使用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">2.2.</span> <span class="nav-text">2、选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">2.2.1.</span> <span class="nav-text">基础选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%8D%E5%90%88%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">2.2.2.</span> <span class="nav-text">复合选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%90%8E%E4%BB%A3%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%9A"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">后代选择器：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AD%90%E4%BB%A3%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%9A"><span class="nav-number">2.2.2.2.</span> <span class="nav-text">子代选择器：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%B9%B6%E9%9B%86%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%9A"><span class="nav-number">2.2.2.3.</span> <span class="nav-text">并集选择器：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%A4%E9%9B%86%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%9A"><span class="nav-number">2.2.2.4.</span> <span class="nav-text">交集选择器：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">2.2.2.5.</span> <span class="nav-text">伪类选择器</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E6%96%87%E5%AD%97%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7"><span class="nav-number">2.3.</span> <span class="nav-text">3、文字文本属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81CSS%E7%89%B9%E6%80%A7"><span class="nav-number">2.4.</span> <span class="nav-text">4、CSS特性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%A7%E6%89%BF%E6%80%A7"><span class="nav-number">2.4.1.</span> <span class="nav-text">继承性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B1%82%E5%8F%A0%E6%80%A7"><span class="nav-number">2.4.2.</span> <span class="nav-text">层叠性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BC%98%E5%85%88%E7%BA%A7"><span class="nav-number">2.4.3.</span> <span class="nav-text">优先级</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -184,281 +192,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://pfmirr.github.io/2024/01/04/JS%E5%9F%BA%E7%A1%80%E4%B8%80/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/ava.jpg">
-      <meta itemprop="name" content="泡芙PF">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="泡芙PF&博客">
-      <meta itemprop="description" content="今天也不想睡天桥捡垃圾">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 泡芙PF&博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/01/04/JS%E5%9F%BA%E7%A1%80%E4%B8%80/" class="post-title-link" itemprop="url">JS基础一</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-01-04 19:40:26 / 修改时间：19:41:17" itemprop="dateCreated datePublished" datetime="2024-01-04T19:40:26+08:00">2024-01-04</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>1.3k</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>JS学习记录</p>
-<h2 id="1-1-js介绍"><a href="#1-1-js介绍" class="headerlink" title="1.1 js介绍"></a>1.1 js介绍</h2><h3 id="1-1-1-介绍："><a href="#1-1-1-介绍：" class="headerlink" title="1.1.1 介绍："></a>1.1.1 介绍：</h3><p>Js是一种运行在客户端的编程语言，实现人机交互，</p>
-<h3 id="1-1-2-作用："><a href="#1-1-2-作用：" class="headerlink" title="1.1.2 作用："></a>1.1.2 作用：</h3><p>实现网页特效、表单验证、数据交互、服务端编程（node.js)</p>
-<p>组成：</p>
-<p>ECMAScript（语法规范）     js语言基础</p>
-<p>web apis(包括DOM（页面文档对象模型）和BOM（浏览器对象模型）)</p>
-<h3 id="1-1-3-权威网站："><a href="#1-1-3-权威网站：" class="headerlink" title="1.1.3 权威网站："></a>1.1.3 权威网站：</h3><p>mdn</p>
-<h2 id="1-2-js的书写位置"><a href="#1-2-js的书写位置" class="headerlink" title="1.2 js的书写位置"></a>1.2 js的书写位置</h2><h3 id="1-2-1-位置："><a href="#1-2-1-位置：" class="headerlink" title="1.2.1 位置："></a>1.2.1 位置：</h3><p>行内</p>
-<p>内部</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;!-- 内部js --&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="comment">//页面弹出框</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="title function_">alert</span>(<span class="string">&#x27;hello world&#x27;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-
-<p>外部</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;!-- 外部js --&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;./02-my.js&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-2-2-书写规范"><a href="#1-2-2-书写规范" class="headerlink" title="1.2.2 书写规范"></a>1.2.2 书写规范</h3><h4 id="1-2-2-1-注释"><a href="#1-2-2-1-注释" class="headerlink" title="1.2.2.1 注释"></a>1.2.2.1 注释</h4><p>单行注释 ctrl+&#x2F;</p>
-<p>多行注释 shift + alt +a</p>
-<h4 id="1-2-2-2-结束符"><a href="#1-2-2-2-结束符" class="headerlink" title="1.2.2.2 结束符"></a>1.2.2.2 结束符</h4><p>; 可写可不写</p>
-<h4 id="1-2-2-3-输入输出语法"><a href="#1-2-2-3-输入输出语法" class="headerlink" title="1.2.2.3 输入输出语法"></a>1.2.2.3 输入输出语法</h4><p>输出：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1、文档输出内容</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(<span class="string">&#x27;要输出的内容&#x27;</span>);</span><br><span class="line"><span class="comment">// 输出内容为标签，也会被解析成网页元素</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(<span class="string">&#x27;&lt;h1&gt;标签&lt;h1&gt;&#x27;</span>);</span><br><span class="line"><span class="comment">// 2、页面弹出框</span></span><br><span class="line"><span class="title function_">alert</span>(<span class="string">&#x27;hello world&#x27;</span>);</span><br><span class="line"><span class="comment">// 3、控制台输出,调试程序用</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;hello world&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<p>输入：</p>
-<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1、显示对话框，包含一条文字信息</span></span><br><span class="line"><span class="built_in">prompt</span>(&#x27;请输入内容&#x27;);</span><br></pre></td></tr></table></figure>
-
-<p>执行顺序：</p>
-<p>从上到下执行，alert（）和prompt（）会跳过页面渲染先被执行</p>
-<h4 id="1-2-2-4-字面量"><a href="#1-2-2-4-字面量" class="headerlink" title="1.2.2.4 字面量"></a>1.2.2.4 字面量</h4><p>介绍：</p>
-<p>字面量是在计算机中描述事物</p>
-<h2 id="1-3-变量"><a href="#1-3-变量" class="headerlink" title="1.3 变量"></a>1.3 变量</h2><h3 id="1-3-1-变量是什么"><a href="#1-3-1-变量是什么" class="headerlink" title="1.3.1 变量是什么"></a>1.3.1 变量是什么</h3><p>存储数据的容器（变量不是数据本身）</p>
-<h3 id="1-3-2-变量的基本使用"><a href="#1-3-2-变量的基本使用" class="headerlink" title="1.3.2 变量的基本使用"></a>1.3.2 变量的基本使用</h3><p>变量的声明</p>
-<p>语法：</p>
-<p>声明关键字 变量名（标识）</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> 变量名</span><br></pre></td></tr></table></figure>
-
-<p>变量的赋值</p>
-<p>定义了一个变量后，你就能够初始化它（赋值）</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="comment">//1、 声明一个年龄变量</span></span><br><span class="line">  <span class="keyword">let</span> age</span><br><span class="line">  <span class="comment">// 2、赋值(18是数字字面量)</span></span><br><span class="line">  age = <span class="number">18</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(age)</span><br><span class="line">  <span class="comment">// 声明的同时赋值,这个过程叫做变量的初始化</span></span><br><span class="line">  <span class="keyword">let</span> btn = <span class="number">10</span></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-<p>更新变量</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> btt = <span class="number">11</span></span><br><span class="line">btt = <span class="number">19</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(btt)</span><br></pre></td></tr></table></figure>
-
-<p>声明多个变量(不建议这种写法，可读性不好)</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> aaa=<span class="number">13</span>, eee=<span class="number">45</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(aaa, eee)</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-3-3-变量的本质"><a href="#1-3-3-变量的本质" class="headerlink" title="1.3.3 变量的本质"></a>1.3.3 变量的本质</h3><p>程序在内存中申请的一块用来存放数据的小空间</p>
-<h3 id="1-3-4-变量命名规则与规范"><a href="#1-3-4-变量命名规则与规范" class="headerlink" title="1.3.4 变量命名规则与规范"></a>1.3.4 变量命名规则与规范</h3><p><strong>规则：必须遵守，不遵守报错</strong></p>
-<p>不能使用关键；</p>
-<p>由数字，字母，下划线和$组成，不能是数字开头；</p>
-<p>字母严格区分大小写</p>
-<p><strong>规范：建议，不遵守不会报错</strong></p>
-<p>起名要有意义；</p>
-<p>遵循小驼峰命名法，第一个单词首字母小写，其他大写</p>
-<h3 id="1-3-5-let和var的区别"><a href="#1-3-5-let和var的区别" class="headerlink" title="1.3.5 let和var的区别"></a>1.3.5 let和var的区别</h3><p>var可以先使用后声明这不合理</p>
-<p>var可以重复声明这也不合理</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://pfmirr.github.io/2024/01/04/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E4%BA%8C/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/ava.jpg">
-      <meta itemprop="name" content="泡芙PF">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="泡芙PF&博客">
-      <meta itemprop="description" content="今天也不想睡天桥捡垃圾">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 泡芙PF&博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/01/04/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E4%BA%8C/" class="post-title-link" itemprop="url">前端基础二</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-01-04 19:35:43 / 修改时间：19:36:19" itemprop="dateCreated datePublished" datetime="2024-01-04T19:35:43+08:00">2024-01-04</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>2.1k</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="前端基础二"><a href="#前端基础二" class="headerlink" title="前端基础二"></a>前端基础二</h1><h2 id="1-、Emmet写法"><a href="#1-、Emmet写法" class="headerlink" title="1 、Emmet写法"></a>1 、Emmet写法</h2><p>定义：代码的简写方式，</p>
-<figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml"><span class="comment">&lt;!-- HTML的Emmet简写如下，css一般是首字母，多个属性加号连接首字母 --&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- 类选择器：标签名.类名 --&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;class&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- id选择器：标签名#id名 --&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;class&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- 同级别：div+p --&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- 父子级：div&gt;p --&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- 多个相同标:span*3 --&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="comment">&lt;!-- 有内容的标签：div</span></span><span class="template-variable">&#123;内容&#125;</span><span class="language-xml"><span class="comment"> --&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>111<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-<h2 id="2、背景属性"><a href="#2、背景属性" class="headerlink" title="2、背景属性"></a>2、背景属性</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">           <span class="attribute">width</span>: <span class="number">400px</span>;</span><br><span class="line">           <span class="attribute">height</span>: <span class="number">400px</span>;</span><br><span class="line">           <span class="attribute">background-color</span>: aqua;</span><br><span class="line">           <span class="comment">/*  背景图：装饰性图片 背景默认平铺（复制） 效果*/</span></span><br><span class="line">           <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">./../images/1.jpg</span>);</span><br><span class="line">           <span class="comment">/* 背景图平铺方式 no-repeat不平铺  repeat平铺 repeat-x 沿x平铺 repeat-y */</span></span><br><span class="line">           <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">           <span class="comment">/* 背景图位置 英文关键字/数字加关键字</span></span><br><span class="line"><span class="comment">               水平：正数向右；负数向左  垂直：正数向下；负数向上</span></span><br><span class="line"><span class="comment">               * 关键字取值方式写法，可以颠倒取值顺序</span></span><br><span class="line"><span class="comment">               * 可以只写一个关键字，另一个方向默认为居中；数字只写一个值表示水平方向，垂直方向为居中</span></span><br><span class="line"><span class="comment">           */</span></span><br><span class="line">           <span class="attribute">background-position</span>: center left;</span><br><span class="line">           <span class="comment">/* 背景图缩放：调整背景图和盒子尺寸</span></span><br><span class="line"><span class="comment">           * 关键字</span></span><br><span class="line"><span class="comment">           *  cover：等比例缩放背景图片以完全覆盖背景区，可能背景图片部分看不见</span></span><br><span class="line"><span class="comment">            *  contain：等比例缩放背景图片以完全装入背景区，可能背景区部分空白</span></span><br><span class="line"><span class="comment">            * 百分比：根据盒子尺寸计算图片大小（100%，图宽盒宽相同）</span></span><br><span class="line"><span class="comment">            * 数字 + 单位（例如：px）</span></span><br><span class="line"><span class="comment">           */</span></span><br><span class="line">           <span class="attribute">background-size</span>: cover;</span><br><span class="line">           <span class="comment">/* 背景图固定 */</span></span><br><span class="line">           <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">           <span class="comment">/* 背景复合属性  </span></span><br><span class="line"><span class="comment">           背景色 背景图 背景图平铺方式 背景图位置/背景图缩放  背景图固定（**空格隔开各个属性值，不区分顺序**）</span></span><br><span class="line"><span class="comment">           */</span></span><br><span class="line">           <span class="attribute">background</span>: pink <span class="built_in">url</span>(<span class="string">./../images/2.jpg</span>) no-repeat center/cover fixed;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="3、显示模式"><a href="#3、显示模式" class="headerlink" title="3、显示模式"></a>3、显示模式</h2><h3 id="三种显示模式"><a href="#三种显示模式" class="headerlink" title="三种显示模式"></a>三种显示模式</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 块级元素 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 独占一行/宽度默认父级的100%/添加宽高属性生效 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;div1&quot;</span>&gt;</span>这是div标签<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;div2&quot;</span>&gt;</span>这是div标签<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 行内元素 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 一行共存多个，由内容决定大小，加宽高不生效，背景色生效 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span>span1<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>span2<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>span3<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 行内块元素 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 一行共存多个，由内容决定大小，加宽高生效，背景色不生效 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;./../images/1.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;./../images/1.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>结果：</p>
-<p><img src="/./%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E4%BA%8C/img1.png"></p>
-<h3 id="转换显示模式"><a href="#转换显示模式" class="headerlink" title="转换显示模式"></a>转换显示模式</h3><p>属性名：display</p>
-<p>属性值：block（块级）、inline-block (行内块) 、 inline（行内）</p>
-<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><h4 id="1、结构伪类选择器"><a href="#1、结构伪类选择器" class="headerlink" title="1、结构伪类选择器"></a>1、结构伪类选择器</h4><p>作用：根据元素的结构关系查找元素</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 第一个 */</span></span><br><span class="line"><span class="selector-tag">li</span><span class="selector-pseudo">:first</span>-child&#123;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 最后一个 */</span></span><br><span class="line"><span class="selector-tag">li</span><span class="selector-pseudo">:last-child</span>&#123;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 任意某个，此处第2个 */</span></span><br><span class="line"><span class="selector-tag">li</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>)&#123;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2、-nth-child-公式"><a href="#2、-nth-child-公式" class="headerlink" title="2、:nth-child(公式)"></a>2、:nth-child(公式)</h4><table>
-<thead>
-<tr>
-<th>功能</th>
-<th>公式</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>偶数标签</td>
-<td>2n</td>
-</tr>
-<tr>
-<td>奇数标签</td>
-<td>2n+1&#x2F;2n-1</td>
-</tr>
-<tr>
-<td>5的倍数标签</td>
-<td>5n</td>
-</tr>
-<tr>
-<td>第5个以后</td>
-<td>n+5</td>
-</tr>
-<tr>
-<td>第5个以前</td>
-<td>-n+5</td>
-</tr>
-</tbody></table>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://pfmirr.github.io/2024/01/04/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E4%B8%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -472,13 +216,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 泡芙PF&博客">
+      <meta itemprop="name" content="前端基础一 | 泡芙PF&博客">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/01/04/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E4%B8%80/" class="post-title-link" itemprop="url">前端基础一</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          前端基础一
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -517,8 +261,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <p>关于html和css</p>
+    <div class="post-body" itemprop="articleBody"><p>关于html和css</p>
 <h2 id="一、HTML"><a href="#一、HTML" class="headerlink" title="一、HTML"></a>一、HTML</h2><blockquote>
 <p>网页制作从上到下，先整体再局部</p>
 </blockquote>
@@ -666,7 +409,6 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="comment">/* (0, 0, 2, 1) */</span></span></span><br><span class="line"><span class="language-css">    <span class="selector-class">.c1</span> <span class="selector-class">.c2</span> <span class="selector-tag">div</span> &#123; </span></span><br><span class="line"><span class="language-css">			<span class="attribute">color</span>: blue;</span></span><br><span class="line"><span class="language-css">		&#125;</span></span><br><span class="line"><span class="language-css">		</span></span><br><span class="line"><span class="language-css">    <span class="comment">/* (0, 1, 0, 1) */</span></span></span><br><span class="line"><span class="language-css">		<span class="selector-tag">div</span> <span class="selector-id">#box3</span> &#123;</span></span><br><span class="line"><span class="language-css">			<span class="attribute">color</span>:green;</span></span><br><span class="line"><span class="language-css">		&#125;</span></span><br><span class="line"><span class="language-css">		</span></span><br><span class="line"><span class="language-css">    <span class="comment">/* (0, 1, 1, 0) */</span></span></span><br><span class="line"><span class="language-css">		<span class="selector-id">#box1</span> <span class="selector-class">.c3</span> &#123;</span></span><br><span class="line"><span class="language-css">			<span class="attribute">color</span>:orange;</span></span><br><span class="line"><span class="language-css">		&#125;</span></span><br><span class="line"><span class="language-css">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;box1&quot;</span> <span class="attr">class</span>=<span class="string">&quot;c1&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;box2&quot;</span> <span class="attr">class</span>=<span class="string">&quot;c2&quot;</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;box3&quot;</span> <span class="attr">class</span>=<span class="string">&quot;c3&quot;</span>&gt;</span></span><br><span class="line">				这行文本是什么颜色的？（黄色）</span><br><span class="line">			<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 
-      
     </div>
 
     
@@ -674,104 +416,29 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+          <div class="post-tags">
+              <a href="/tags/html/" rel="tag"><i class="fa fa-tag"></i> html</a>
+              <a href="/tags/css/" rel="tag"><i class="fa fa-tag"></i> css</a>
+          </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://pfmirr.github.io/2024/01/04/%E5%9F%BA%E4%BA%8Ehexo-GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/ava.jpg">
-      <meta itemprop="name" content="泡芙PF">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="泡芙PF&博客">
-      <meta itemprop="description" content="今天也不想睡天桥捡垃圾">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 泡芙PF&博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/01/04/%E5%9F%BA%E4%BA%8Ehexo-GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-title-link" itemprop="url">基于hexo+GitHub的博客搭建</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-01-04 12:33:21 / 修改时间：19:30:59" itemprop="dateCreated datePublished" datetime="2024-01-04T12:33:21+08:00">2024-01-04</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/github%E4%BD%BF%E7%94%A8/" itemprop="url" rel="index"><span itemprop="name">github使用</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>1.3k</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>介绍博客的搭建以及部分美化</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2024/01/04/%E5%9F%BA%E4%BA%8Ehexo-GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/01/04/%E5%9F%BA%E4%BA%8Ehexo-GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" rel="prev" title="基于hexo+GitHub的博客搭建">
+                  <i class="fa fa-angle-left"></i> 基于hexo+GitHub的博客搭建
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2024/01/04/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E4%BA%8C/" rel="next" title="前端基础二">
+                  前端基础二 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
   </article>
 </div>
+
 
 
 
