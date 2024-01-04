@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>基于hexo+GitHub的博客搭建</title>
+    <url>/2024/01/04/%E5%9F%BA%E4%BA%8Ehexo-GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>介绍博客的搭建以及部分美化</p>
+<span id="more"></span>
+
+<h2 id="一、过程"><a href="#一、过程" class="headerlink" title="一、过程"></a>一、过程</h2><h3 id="1-安装git和node-js"><a href="#1-安装git和node-js" class="headerlink" title="1.安装git和node.js"></a>1.安装git和node.js</h3><p>[git官网] (<a href="https://git-scm.com/downloads)%E4%B8%8B%E8%BD%BDgit%E5%B9%B6%E5%AE%89%E8%A3%85%EF%BC%8C%E5%9C%A8git%E4%B8%AD%E7%BB%91%E5%AE%9AGitHub%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E9%82%AE%E7%AE%B1">https://git-scm.com/downloads)下载git并安装，在git中绑定GitHub的用户名和邮箱</a><br>[node官网] (<a href="https://nodejs.org/en/download/)%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%AE%89%E8%A3%85%EF%BC%8C%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">https://nodejs.org/en/download/)下载并安装，配置环境变量</a></p>
+<h3 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2.安装hexo"></a>2.安装hexo</h3><p>安装命令行：<br>npm install - g hexo-cli<br>初始化命令行：<br>hexo init myBlog<br>cd myBlog<br>npm install</p>
+<h3 id="3-加载主题并配置"><a href="#3-加载主题并配置" class="headerlink" title="3.加载主题并配置"></a>3.加载主题并配置</h3><p>在Hexo官网搜索自己喜欢的主题样式，将站点文件夹下的_config.yml中的theme修改为所选主题名称<br>hexo s 本地4000浏览</p>
+<h3 id="4-部署github"><a href="#4-部署github" class="headerlink" title="4.部署github"></a>4.部署github</h3><p>创建同名仓库（如pfmirr.github.io其中pfmirr为username）<br>配置ssh key如前三行命令,首次使用还须要确认并添加主机到本机SSH可信列表,如第四行命令<br>git config –global user.name “用户名”<br>git config –global user.email “邮箱地址”<br>ssh-keygen -t rsa -C ‘上面的邮箱’<br>ssh -T <a href="mailto:&#103;&#105;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#109;">&#103;&#105;&#116;&#64;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#109;</a><br>登陆 Github 上添加刚刚生成的SSH key<br>链接本地和github,如下：<br>deploy:<br>  type: git<br>  repo: <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#x2e;&#x63;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#x2e;&#x63;&#x6f;&#x6d;</a>:pfmirr&#x2F;pfmirr.github.io.git<br>  branch: master<br>安装部署插件 hexo-deployer-git，如下：<br>npm install hexo-deployer-git –save<br>生成并部署，采用pfmirr.github.io查看<br>hexo g<br>hexo d </p>
+<h2 id="二、美化"><a href="#二、美化" class="headerlink" title="二、美化"></a>二、美化</h2><h3 id="1-隐藏底部强力驱动"><a href="#1-隐藏底部强力驱动" class="headerlink" title="1.隐藏底部强力驱动"></a>1.隐藏底部强力驱动</h3><p>vscode全局搜索并注释：ctrl+F 主题配置文件powered和enable改为false</p>
+<h3 id="2-站内搜索文章"><a href="#2-站内搜索文章" class="headerlink" title="2.站内搜索文章"></a>2.站内搜索文章</h3><p>安装插件hexo-generator-searchdb<br>站点配置文件添加如下：<br>#站内搜索<br>search:<br>path: search.xml<br>field: post<br>format: html<br>limit: 10000</p>
+<p>主题配置文件修改如下：<br>local_search:<br>  enable: true</p>
+]]></content>
+      <categories>
+        <category>github使用</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2024/01/04/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -17,26 +38,5 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>基于hexo+GitHub的博客搭建</title>
-    <url>/2024/01/04/%E5%9F%BA%E4%BA%8Ehexo-GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<p>介绍博客的搭建以及部分美化</p>
-<span id="more"></span>
-
-<h2 id="一、过程"><a href="#一、过程" class="headerlink" title="一、过程"></a>一、过程</h2><h3 id="1-安装git和node-js"><a href="#1-安装git和node-js" class="headerlink" title="1.安装git和node.js"></a>1.安装git和node.js</h3><p>[git官网] (<a href="https://git-scm.com/downloads)%E4%B8%8B%E8%BD%BDgit%E5%B9%B6%E5%AE%89%E8%A3%85%EF%BC%8C%E5%9C%A8git%E4%B8%AD%E7%BB%91%E5%AE%9AGitHub%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E9%82%AE%E7%AE%B1">https://git-scm.com/downloads)下载git并安装，在git中绑定GitHub的用户名和邮箱</a><br>[node官网] (<a href="https://nodejs.org/en/download/)%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%AE%89%E8%A3%85%EF%BC%8C%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">https://nodejs.org/en/download/)下载并安装，配置环境变量</a></p>
-<h3 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2.安装hexo"></a>2.安装hexo</h3><p>安装命令行：<br>npm install - g hexo-cli<br>初始化命令行：<br>hexo init myBlog<br>cd myBlog<br>npm install</p>
-<h3 id="3-加载主题并配置"><a href="#3-加载主题并配置" class="headerlink" title="3.加载主题并配置"></a>3.加载主题并配置</h3><p>在Hexo官网搜索自己喜欢的主题样式，将站点文件夹下的_config.yml中的theme修改为所选主题名称<br>hexo s 本地4000浏览</p>
-<h3 id="4-部署github"><a href="#4-部署github" class="headerlink" title="4.部署github"></a>4.部署github</h3><p>创建同名仓库（如pfmirr.github.io其中pfmirr为username）<br>配置ssh key如前三行命令,首次使用还须要确认并添加主机到本机SSH可信列表,如第四行命令<br>git config –global user.name “用户名”<br>git config –global user.email “邮箱地址”<br>ssh-keygen -t rsa -C ‘上面的邮箱’<br>ssh -T <a href="mailto:&#103;&#105;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#x62;&#x2e;&#99;&#111;&#109;">&#103;&#105;&#116;&#64;&#x67;&#x69;&#x74;&#104;&#117;&#x62;&#x2e;&#99;&#111;&#109;</a><br>登陆 Github 上添加刚刚生成的SSH key<br>链接本地和github,如下：<br>deploy:<br>  type: git<br>  repo: <a href="mailto:&#103;&#x69;&#x74;&#64;&#103;&#x69;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#64;&#103;&#x69;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a>:pfmirr&#x2F;pfmirr.github.io.git<br>  branch: master<br>安装部署插件 hexo-deployer-git，如下：<br>npm install hexo-deployer-git –save<br>生成并部署，采用pfmirr.github.io查看<br>hexo g<br>hexo d </p>
-<h2 id="二、美化"><a href="#二、美化" class="headerlink" title="二、美化"></a>二、美化</h2><h3 id="1-隐藏底部强力驱动"><a href="#1-隐藏底部强力驱动" class="headerlink" title="1.隐藏底部强力驱动"></a>1.隐藏底部强力驱动</h3><p>vscode全局搜索并注释：ctrl+F 主题配置文件powered和enable改为false</p>
-<h3 id="2-站内搜索文章"><a href="#2-站内搜索文章" class="headerlink" title="2.站内搜索文章"></a>2.站内搜索文章</h3><p>安装插件hexo-generator-searchdb<br>站点配置文件添加如下：<br>#站内搜索<br>search:<br>path: search.xml<br>field: post<br>format: html<br>limit: 10000</p>
-<p>主题配置文件修改如下：<br>local_search:<br>  enable: true</p>
-]]></content>
-      <categories>
-        <category>github使用</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-      </tags>
   </entry>
 </search>
