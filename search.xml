@@ -336,10 +336,48 @@
 <p>小云朵上传，<strong>去除颜色提交</strong>，上传再下载使用</p>
 <h3 id="平面转换"><a href="#平面转换" class="headerlink" title="平面转换"></a>平面转换</h3><h4 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h4><p>目标：使用transform实现元素的位移、<em>旋转</em>、缩放（2D转换）</p>
 <p>平面转换属性：transform</p>
-<h4 id="位移"><a href="#位移" class="headerlink" title="位移"></a>位移</h4><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">transform</span>:<span class="built_in">translate</span>(水平移动距离,垂直移动距离)</span><br></pre></td></tr></table></figure>
+<h4 id="位移"><a href="#位移" class="headerlink" title="位移"></a>位移</h4><h5 id="水平"><a href="#水平" class="headerlink" title="水平"></a>水平</h5><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">transform</span>:<span class="built_in">translate</span>(水平移动距离,垂直移动距离)</span><br></pre></td></tr></table></figure>
 
-<p>取值正负均可，x正为右，Y正为下；像素单位数值，百分比也可</p>
-<h3 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h3>]]></content>
+<p>取值正负均可，x正为右，Y正为下；像素单位数值，百分比也可，具有覆盖性</p>
+<p>技巧：</p>
+<p>只给一个值，表示X轴方向移动，单独设置某个方向移动距离使用transformX()&amp;transformY()</p>
+<p>绝对定位元素居中（例子）</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">position</span>: absolute;</span><br><span class="line"><span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line"><span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line"><span class="comment">/* margin-left: -100px;</span></span><br><span class="line"><span class="comment">margin-top: -50px; */</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>);</span><br><span class="line"></span><br><span class="line"><span class="attribute">width</span>: <span class="number">203px</span>;</span><br><span class="line"><span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line"><span class="attribute">background-color</span>: pink;   </span><br></pre></td></tr></table></figure>
+
+<h5 id="旋转"><a href="#旋转" class="headerlink" title="旋转"></a>旋转</h5><p>语法：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">transform</span>:<span class="built_in">rotate</span>(角度)&#123;正(顺时针)负均可，角度单位为deg&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意：必须配合过度 transition: all 2s;</p>
+<h5 id="转换原点"><a href="#转换原点" class="headerlink" title="转换原点"></a>转换原点</h5><p>语法：</p>
+<figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line"><span class="built_in">transform</span>-<span class="built_in">origin</span>:原点水平位置 原点垂直位置</span><br></pre></td></tr></table></figure>
+
+<p>注意：默认原点为中心点，使用 transform-origin改变转换原点</p>
+<h5 id="多重转换"><a href="#多重转换" class="headerlink" title="多重转换"></a>多重转换</h5><p>语法：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">transform</span>: <span class="built_in">translate</span>() <span class="built_in">rotate</span>();</span><br></pre></td></tr></table></figure>
+
+<p>注意：旋转会改变坐标轴向，所以需要先水平，再旋转，对于多重转换，旋转最后写；单独设置不可行，transform属性会覆盖</p>
+<p>例子：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 可以！！！！！ */</span></span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">translate</span>(<span class="number">600px</span>) <span class="built_in">rotate</span>(<span class="number">720deg</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 不行：！！！旋转会改变坐标轴向，所以需要先水平，再旋转，对于多重转换，旋转最后写 */</span></span><br><span class="line"><span class="comment">/* transform: rotate(720deg) translate(600px); */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*不行：！！！ 单独设置不可行，transform属性会覆盖 */</span></span><br><span class="line"><span class="comment">/* transform: translate(600px);</span></span><br><span class="line"><span class="comment">transform: rotate(720deg); */</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="缩放"><a href="#缩放" class="headerlink" title="缩放"></a>缩放</h5><p>语法：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">transform</span>: <span class="built_in">scale</span>(缩放倍数);&#123;大于<span class="number">1</span>放大，小于<span class="number">1</span>缩小，一般等比例缩放&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意：缩放效果用width和height不可行</p>
+<h3 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h3><h4 id="渐变背景"><a href="#渐变背景" class="headerlink" title="渐变背景"></a>渐变背景</h4><p>语法：</p>
+<figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line"><span class="built_in">background</span>-<span class="built_in">image</span>:<span class="built_in">linear</span>-gradient(颜色<span class="number">1</span>,颜色<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+
+<p>例子：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 常用渐变：半透明渐变 */</span></span><br><span class="line"><span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(</span><br><span class="line">    <span class="comment">/* 透明 */</span></span><br><span class="line">    transparent,</span><br><span class="line">    <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">6</span>));</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+]]></content>
       <categories>
         <category>前端</category>
       </categories>
